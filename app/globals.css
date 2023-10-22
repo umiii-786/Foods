@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 
+
+.bgchange{
+    background-color: rgba(46, 193, 46, 0.944);
+    color: white;
+    font-weight: bold;
+}
 .checkcart{
     animation-duration: 1.5s;
     animation-iteration-count: infinite;

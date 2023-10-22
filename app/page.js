@@ -236,6 +236,7 @@ const page = () => {
   const [itemprice, setitemprice] = useState({ price: 0});
   const [searchval,setsearcchval]=useState("");
   const [sidebar, setsidebar] = useState({right: "-500px"})
+  // setFoodData(Data); 
   const All=()=>{
     setFoodData(Data); 
   }
@@ -245,6 +246,8 @@ const page = () => {
 
 
 const response=(e)=>{
+let elem=e.target;
+elem.classList.add('bgchange');
         let text=e.target.innerText;
         setFoodData(()=>{
           return Data.filter((elemet)=>{
